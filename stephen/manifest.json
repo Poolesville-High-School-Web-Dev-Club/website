@@ -1,0 +1,15 @@
+{
+  "short_name": "Stephen",
+  "name": "Stephen's Site",
+  "icons": [
+    {
+      "src": "stephen.png",
+      "type": "image/png",
+      "sizes": "1x1"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1E2024",
+  "background_color": "#1A1C20"
+}
