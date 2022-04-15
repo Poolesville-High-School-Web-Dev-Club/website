@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.3d0f28ea.css",
-    "main.js": "./static/js/main.2fc6e0df.js",
+    "main.css": "./static/css/main.87e2eac0.css",
+    "main.js": "./static/js/main.83509e08.js",
+    "static/media/mac-draco.glb": "./static/media/mac-draco.a5715f0d5ef8c6951eb3.glb",
     "index.html": "./index.html",
-    "main.3d0f28ea.css.map": "./static/css/main.3d0f28ea.css.map",
-    "main.2fc6e0df.js.map": "./static/js/main.2fc6e0df.js.map"
+    "main.87e2eac0.css.map": "./static/css/main.87e2eac0.css.map",
+    "main.83509e08.js.map": "./static/js/main.83509e08.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d0f28ea.css",
-    "static/js/main.2fc6e0df.js"
+    "static/css/main.87e2eac0.css",
+    "static/js/main.83509e08.js"
   ]
 }
