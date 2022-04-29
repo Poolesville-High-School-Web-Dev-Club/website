@@ -6,7 +6,7 @@ export default function App() {
   return (
     <main>
       <Navbar />
-      <div className='container mx-auto '>
+      <div className='container mx-auto'>
         <Welcome />
         <MemberPages />
       </div>

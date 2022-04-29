@@ -21,7 +21,7 @@ export default function Navbar() {
                             <div className='absolute w-full bg-blue-700 opacity-0 pointer-events-none transition-primary rounded-b-md group-hover:opacity-100 group-hover:pointer-events-auto'>
                                 {members.map((index, member) => {
                                     return (
-                                        <div key={index} className="hover:bg-blue-800 transition-primary ">
+                                        <div key={index} className="hover:bg-blue-800 hover:rounded-md transition-primary ">
                                             <a href={`/` + members[member]}><p className='p-2'>{members[member]}</p></a>
                                         </div>
                                     )
