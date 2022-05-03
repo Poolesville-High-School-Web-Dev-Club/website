@@ -1,0 +1,30 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "## Live @ https://astonishing-paprenjak-c2a8f6.netlify.app/",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poolesville-High-School-Web-Dev-Club/Poolesville-High-School-Web-Dev-Club.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poolesville-High-School-Web-Dev-Club/Poolesville-High-School-Web-Dev-Club.github.io/issues"
+  },
+  "homepage": "https://github.com/Poolesville-High-School-Web-Dev-Club/Poolesville-High-School-Web-Dev-Club.github.io#readme",
+  "dependencies": {
+    "@jamxu/timestamp": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.4",
+    "puppeteer": "^13.7.0"
+  }
+}
