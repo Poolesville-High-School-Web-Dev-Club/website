@@ -11,9 +11,9 @@ https://poolesville-high-school-web-dev-club.github.io/
 
 Build folder for phs web dev site. This is the files for the front end of the site.
 
-### /web-dev-server
+### /api
 
-Next.js code for creating a backend for the dev site.
+API for phs web dev site.
 
 ### /web-dev-ui
 
