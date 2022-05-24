@@ -7,7 +7,7 @@ export default function Navbar() {
 
 
     return (
-        <nav className='flex p-3 text-2xl'>
+        <nav className='flex p-3 text-2xl '>
             <div className='w-full lg:w-1/3 '>
                 <a href='/' >phs web dev club</a>
             </div>
