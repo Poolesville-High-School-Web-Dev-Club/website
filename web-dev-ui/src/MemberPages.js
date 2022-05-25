@@ -19,7 +19,7 @@ function Member(props) {
   return (
     <div className="w-1/3 mx-4 md:w-1/5">
       <a href={`/member-pages/${props.name}`}>
-        <img className='rounded-md hover:shadow-xl transition-primary' src={`http://localhost:3000/?url=https://poolesville-high-school-web-dev-club.github.io/member-pages/${props.name}/`} />
+        <img className='rounded-md hover:shadow-xl transition-primary' src={`http://localhost:3000/member-pages/${props.name}/`} />
       </a>
       <div className="mt-2">
         <a href={`/member-pages/${props.name}`} className="px-2 py-1 text-2xl hover-bg-gray">
