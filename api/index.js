@@ -1,3 +1,4 @@
+
 const express = require('express')
 const puppeteer = require('puppeteer');
 const delay = require('delay')
@@ -5,7 +6,6 @@ var git = require('git-last-commit');
 const fs = require('fs')
 
 const members = require('./members.json')
-const lastCommitTime = require('./lastCommitTime')
 
 const app = express();
 
@@ -20,14 +20,15 @@ app.get('/member-pages/:name', async (req, res) => {
         }
 
 
-        git.getLastCommit( async (err, commit) => {
+        git.getLastCommit(async (err, commit) => {
             const recentCommitTime = commit.committedOn
+            const lastCommitTime = await fs.readFileSync(`./lastCommitTime`, 'utf8');
 
-            if (lastCommitTime < recentCommitTime) { // If there is a new commit
-                fs.writeFileSync('./lastCommitTime', recentCommitTime)
+            if (lastCommitTime != recentCommitTime) { // If there is a new commit
+                await fs.writeFileSync('./lastCommitTime', recentCommitTime)
 
-                let browser = await puppeteer.launch();
-                let page = await browser.newPage();
+                const browser = await puppeteer.launch();
+                const page = await browser.newPage();
                 await page.setViewport({
                     width: 1920,
                     height: 1080,
