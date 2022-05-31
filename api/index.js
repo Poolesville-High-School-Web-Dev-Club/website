@@ -57,5 +57,10 @@ app.get('/member-pages/:name', async (req, res) => {
     }
 })
 
+app.get('/join', (req, res) => {
+
+});
+
+
 
 app.listen(3000, () => console.log(`Server initialized on port 3000!`));
