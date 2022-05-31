@@ -15,7 +15,7 @@ export default function Navbar() {
                 <div className='flex justify-between'>
                     <div className='relative'>
                         <a href='#members' className='group'>
-                            <div className='rounded-b-none hover-bg-gray' >
+                            <div className='rounded-b-none hover-bg-gray hover:rounded-b-none rounded-t-md' >
                                 <div className='px-2 py-1 '>
                                     members
                                 </div>
@@ -49,7 +49,7 @@ export default function Navbar() {
 function NavItem(props) {
     return (
         <a href={`#${props.name}`}>
-            <div className='px-2 py-1 hover-bg-gray' >
+            <div className='px-2 py-1 hover-bg-gray rounded-md' >
                 {props.name}
             </div>
         </a>

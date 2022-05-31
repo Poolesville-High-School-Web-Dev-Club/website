@@ -11,7 +11,14 @@
 
 }
 
-@layer components {
+h3 {
+  @apply text-2xl font-semibold
+}
+
+p {
+  @apply text-lg
+}
+
   body {
     @apply bg-blue-900 text-white
   }
@@ -22,6 +29,5 @@
 
 
   .hover-bg-gray {
-    @apply transition-primary rounded-md hover:bg-blue-700
+    @apply transition-primary hover:bg-blue-700
   }
-}
