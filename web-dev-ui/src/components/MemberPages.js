@@ -15,15 +15,15 @@ export default function MemberPages() {
   );
 }
 
-function Member(props) {
+function Member({ name }) {
   return (
     <div className="w-1/3 mx-4 md:w-1/5">
-      <a href={`/member-pages/${props.name}`}>
-        <img className='rounded-md hover:shadow-xl transition-primary' src={`http://localhost:3000/member-pages/${props.name}/`} />
+      <a href={`/member-pages/${name}`}>
+        <img className='rounded-md hover:shadow-xl transition-primary ' src={`http://localhost:3000/member-pages/${name}/`} alt={`${name}'s page`} onLoad={() => console.log("loaded")} />
       </a>
       <div className="mt-2">
-        <a href={`/member-pages/${props.name}`} className="px-2 py-1 text-2xl hover-bg-gray">
-          {props.name}
+        <a href={`/member-pages/${name}`} className="px-2 py-1 text-2xl rounded-md hover-bg-gray">
+          {name}
         </a>
       </div>
     </div>

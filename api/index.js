@@ -21,7 +21,7 @@ async function takeScreenshot(name, path) {
 
     // Stephen is the only site with 3D graphics
     if (name === 'stephen')
-        await delay(1000);
+        await delay(3000);
 
 
     await page.screenshot({ path: __dirname + path });
